@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex items-center space-x-2">
         <div className=" cursor-pointer  flex items-center">
           <img
-            src="./PG.jpg"
+            src="./pb.jpg"
             className=" w-12 h-12 rounded-full ml-4 mr-10 sm:ml-14 sm:mr-4"
           />
         </div>

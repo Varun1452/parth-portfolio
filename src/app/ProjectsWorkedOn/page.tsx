@@ -105,11 +105,9 @@ export default function CricTracker() {
           data-aos="flip-right"
         >
           <div className="w-48 h-60 sm:w-60 sm:h-72 md:w-90 md:h-96 lg:w-[300px] lg:h-[350px]">
-            <img
-              src="CI.png"
-              alt="CricTracker UI"
-              className="w-full h-full object-cover rounded-lg"
-            />
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left mb-4 md:mb-0">
+          Projects I’ve <br /> Worked on
+        </h2>
           </div>
         </div>
 
@@ -117,7 +115,7 @@ export default function CricTracker() {
         <div className="flex-1 flex flex-col gap-6  " data-aos="zoom-in">
           {/* Title */}
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-left">
-            CEMENTECH INFRA
+            DEMO
           </h1>
 
           {/* Technologies Used */}
@@ -145,7 +143,7 @@ export default function CricTracker() {
 
           <div className="flex justify-center md:justify-start">
             <a
-              href="https://cementech-infra.vercel.app/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -154,7 +152,7 @@ export default function CricTracker() {
                 className="w-full border md:w-auto py-3 px-6 bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] text-white rounded-full flex items-center justify-center gap-4 shadow-md hover:scale-105 transition-transform"
               >
                 <Link />
-                Go to CEMENTECH INFRA
+                Redirect to project
               </button>
             </a>
           </div>
