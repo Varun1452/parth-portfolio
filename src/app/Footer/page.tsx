@@ -12,11 +12,11 @@ const Footer = () => {
           />
         </div>
         {/* <span className="font-bold ">
-          VARUN <span className="#7127BA">GAUDANI</span>
+          Parth <span className="#7127BA">GAUDANI</span>
         </span> */}
       </div>
       <span className="text-sm sm:mr-4 ml-8">
-        Designed & Built by <span className="font-bold">Varun Gaudani</span>
+        Designed & Built by <span className="font-bold">Parth Bhakhar</span>
       </span>
     </footer>
   );

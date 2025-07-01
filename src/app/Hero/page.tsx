@@ -17,7 +17,7 @@ const Hero = () => {
         <p>Hello 👋 I’m</p>
         <section className="animation">
           <div className="first">
-            <div>Varun Gaudani</div>
+            <div>Parth Bhakhar</div>
           </div>
           <div className="second">
             <div>Web Developer</div>
@@ -58,7 +58,7 @@ const Hero = () => {
           className="rounded-full hidden md:block w-[200px] top-10 animate-pulse -right-20 absolute"
         />
         <a
-          href="./Varun_Gaudani.pdf"
+          href="./Parth_bhakhar.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 text-white  px-6 py-3 rounded-lg text-lg font-semibold bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] transition-all glow-on-hover"

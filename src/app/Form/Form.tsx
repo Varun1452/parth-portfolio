@@ -1,10 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("maneknap");
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
@@ -63,22 +61,10 @@ function ContactForm() {
     formValues.message &&
     !Object.values(errors).some((error) => error !== "");
 
-  if (state.succeeded) {
-    return (
-      <div className="max-w-4xl mx-auto px-4 py-16 text-center text-white">
-        <p className="text-green-400 text-xl" data-aos="flip-up">
-          Thanks for reaching out! <br />
-          We will contact you soon.
-        </p>
-      </div>
-    );
-  }
-
   return (
     <div className="max-w-4xl mx-auto px-4 py-16" id="form">
       <form
         data-aos="zoom-in"
-        onSubmit={handleSubmit}
         className="text-white shadow-lg rounded-lg p-8 bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]"
       >
         {/* Full Name */}
@@ -86,7 +72,7 @@ function ContactForm() {
           <label data-aos="fade-right" className="block text-white">
             Full Name
           </label>
-            <input
+          <input
             data-aos="flip-up"
             type="text"
             name="name"
@@ -99,7 +85,6 @@ function ContactForm() {
           {errors.name && (
             <p className="text-red-400 text-sm mt-1">{errors.name}</p>
           )}
-          <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
 
         {/* Email */}
@@ -120,7 +105,6 @@ function ContactForm() {
           {errors.email && (
             <p className="text-red-400 text-sm mt-1">{errors.email}</p>
           )}
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
         {/* Phone Number */}
@@ -141,7 +125,6 @@ function ContactForm() {
           {errors.phone && (
             <p className="text-red-400 text-sm mt-1">{errors.phone}</p>
           )}
-          <ValidationError prefix="Phone" field="phone" errors={state.errors} />
         </div>
 
         {/* Message */}
@@ -151,7 +134,7 @@ function ContactForm() {
           </label>
           <textarea
             data-aos="flip-up"
-            name="message" 
+            name="message"
             required
             value={formValues.message}
             onChange={handleChange}
@@ -161,11 +144,6 @@ function ContactForm() {
           {errors.message && (
             <p className="text-red-400 text-sm mt-1">{errors.message}</p>
           )}
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
         </div>
 
         {/* Submit Button */}
@@ -173,11 +151,8 @@ function ContactForm() {
           <button
             data-aos="flip-up"
             type="submit"
-            disabled={state.submitting}
             className="w-full py-2 bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] text-white rounded-md"
-          >
-            {state.submitting ? "Sending..." : "Submit"}
-          </button>
+          >Submit</button>
         )}
       </form>
     </div>

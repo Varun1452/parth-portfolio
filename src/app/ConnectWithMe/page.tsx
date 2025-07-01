@@ -8,19 +8,19 @@ const skillsData = [
     src: "./linkedIn.svg",
     alt: "HTML5 Logo",
     label: "LinkedIn",
-    href: "https://in.linkedin.com/in/varun-gaudani-938b79292",
+    href: "",
   },
   {
     src: "./instagram.svg",
     alt: "CSS3 Logo",
     label: "Instagram",
-    href: "https://www.instagram.com/varun_verse_2505/",
+    href: "",
   },
   {
     src: "./facebook.svg",
     alt: "JavaScript Logo",
     label: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=100075145203930",
+    href: "",
   },
   {
     src: "./gmail.svg",
@@ -33,7 +33,7 @@ const skillsData = [
     src: "./github.png",
     alt: "React Hook Forms Logo",
     label: "GitHub",
-    href: "https://github.com/Varun1452",
+    href: "",
   },
 ];
 
@@ -75,7 +75,7 @@ const ConnectWithME = () => {
     const screenWidth = window.innerWidth;
 
     if (screenWidth <= 768) {
-      window.location.href = "mailto:varungaudani80@gmail.com";
+      window.location.href = "mailto:";
     } else {
       window.location.href =
         "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRvwdQRWjVlbjBHhXPmQGXWRrjFPvGVGVVSxxNHhHfQJGgVflhxCBGCtjWJLwwLvLqxhFBG";
